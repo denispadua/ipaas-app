@@ -81,11 +81,13 @@ Caso nenhum parâmetro seja utilizado os 10 primeiros jobs serão retornados.
 `Filtros:` O usuário poderá filtrar um usuário através da sua data de criação ou nome utilizando os parâmetros dateat=dd/mm/yyyy ou name=xxxxx.
 
 > GET /users?user=xx
+
 > GET /users?dateat=dd/mm/yyyy
 
 `Paginação:` O usuário poderá filtrar a quantidade de itens obtido através do parâmetro limit=xx e navegar entre as páginas com os parâmetros /users?page=xx&limit=xx
 
 > GET /users?limit=xx
+
 > GET /users?page=1&limit=10
 
 Caso nenhum parâmetro seja utilizado os 10 primeiros users serão retornados.
