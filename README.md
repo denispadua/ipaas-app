@@ -20,19 +20,19 @@ Sistema web para cadastro de Jobs, como teste técnico para a vaga de Desenvolve
 
 Esta seção tem como objetivo explicitar cada endpoint do projeto.
 
-### 1. GET /api/jobs
+### 1. GET /jobs
 
 `Filtros:` O usuário poderá filtrar um job através da sua data de criação ou usuário utilizando os parâmetros dateat=dd/mm/yyyy ou user=xxxxx.
 
-> GET /api/jobs?user=xx
+> GET /jobs?user=xx
 
-> GET /api/jobs?dateat=dd/mm/yyyy
+> GET /jobs?dateat=dd/mm/yyyy
 
-`Paginação:` O usuário poderá filtrar a quantidade de itens obtido através do parâmetro limit=xx e navegar entre as páginas com os parâmetros /api/jobs?page=xx&limit=xx
+`Paginação:` O usuário poderá filtrar a quantidade de itens obtido através do parâmetro limit=xx e navegar entre as páginas com os parâmetros /jobs?page=xx&limit=xx
 
-> GET /api/jobs?limit=xx
+> GET /jobs?limit=xx
 
-> GET /api/jobs?page=1&limit=10
+> GET /jobs?page=1&limit=10
 
 Caso nenhum parâmetro seja utilizado os 10 primeiros jobs serão retornados.
 
@@ -40,7 +40,7 @@ Caso nenhum parâmetro seja utilizado os 10 primeiros jobs serão retornados.
 
 - requisição:
 
-  > `GET /api/jobs`
+  > `GET /jobs`
 
 - resposta:
   > `200 OK`
@@ -76,17 +76,17 @@ Caso nenhum parâmetro seja utilizado os 10 primeiros jobs serão retornados.
 }
 ```
 
-### 2. GET /api/users
+### 2. GET /users
 
 `Filtros:` O usuário poderá filtrar um usuário através da sua data de criação ou nome utilizando os parâmetros dateat=dd/mm/yyyy ou name=xxxxx.
 
-> GET /api/users?user=xx
-> GET /api/users?dateat=dd/mm/yyyy
+> GET /users?user=xx
+> GET /users?dateat=dd/mm/yyyy
 
-`Paginação:` O usuário poderá filtrar a quantidade de itens obtido através do parâmetro limit=xx e navegar entre as páginas com os parâmetros /api/users?page=xx&limit=xx
+`Paginação:` O usuário poderá filtrar a quantidade de itens obtido através do parâmetro limit=xx e navegar entre as páginas com os parâmetros /users?page=xx&limit=xx
 
-> GET /api/users?limit=xx
-> GET /api/users?page=1&limit=10
+> GET /users?limit=xx
+> GET /users?page=1&limit=10
 
 Caso nenhum parâmetro seja utilizado os 10 primeiros users serão retornados.
 
@@ -94,7 +94,7 @@ Caso nenhum parâmetro seja utilizado os 10 primeiros users serão retornados.
 
 - requisição:
 
-  > `GET /api/users`
+  > `GET /users`
 
 - resposta:
   > `200 OK`
@@ -123,12 +123,12 @@ Caso nenhum parâmetro seja utilizado os 10 primeiros users serão retornados.
 }
 ```
 
-### 3. POST /api/jobs
+### 3. POST /jobs
 
 O usuário poderá criar um job utilizando o método POST
 
 - requisição:
-  > `POST /api/jobs`
+  > `POST /jobs`
 
 ```json
   Content-Type: application/json
@@ -143,12 +143,12 @@ O usuário poderá criar um job utilizando o método POST
 }
 ```
 
-### 4. POST /api/users
+### 4. POST /users
 
 O usuário poderá criar um usuário utilizando o método POST
 
 - requisição:
-  > `POST /api/users`
+  > `POST /users`
 
 ```json
   Content-Type: application/json
