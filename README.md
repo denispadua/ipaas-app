@@ -2,6 +2,15 @@
 
 Sistema web para cadastro de Jobs, como teste técnico para a vaga de Desenvolvedor Full Stack na LinkAPI. A aplicação back-end está hospedada no heroku, o banco de dados no MongoDB Cloud e a aplicação front-end está hospedada no github. 
 
+A aplicação pode ser acessada no link:
+
+- [Aplicação Angular](https://denispadua.github.io/ipaas-app.github.io)
+
+- [API/users](https://ipaas-app.herokuapp.com/users)
+
+- [API/jobs](https://ipaas-app.herokuapp.com/jobs)
+
+
 Para executar a aplicação back-end, clone o repositório e vá até o diretório ipaas-app/back-end e rode o comando 
 
 > npm i && node app.js
@@ -10,14 +19,6 @@ Para executar a aplicação front-end, clone o repositório e vá até o diretó
 
 > npm i && npm start
 
-
-A aplicação pode ser acessada no link:
-
-- [Aplicação Angular](https://denispadua.github.io/ipaas-app.github.io)
-
-- [API/users](https://ipaas-app.herokuapp.com/users)
-
-- [API/jobs](https://ipaas-app.herokuapp.com/jobs)
 
 ## Tecnologias utilizadas
 
