@@ -2,8 +2,13 @@
 
 Sistema web para cadastro de Jobs, como teste técnico para a vaga de Desenvolvedor Full Stack na LinkAPI. A aplicação back-end está hospedada no heroku, o banco de dados no MongoDB Cloud e a aplicação front-end está hospedada no github. 
 
-Para executar a aplicação back-end, clone o repositório e vá até o diretório ipaas-app/back-end e rode o comando > npm i && node app.js
-Para executar a aplicação front-end, clone o repositório e vá até o diretório ipaas-app/front-end/job-app e rode o comando > npm i && npm start
+Para executar a aplicação back-end, clone o repositório e vá até o diretório ipaas-app/back-end e rode o comando 
+
+> npm i && node app.js
+
+Para executar a aplicação front-end, clone o repositório e vá até o diretório ipaas-app/front-end/job-app e rode o comando
+
+> npm i && npm start
 
 
 A aplicação pode ser acessada no link:
