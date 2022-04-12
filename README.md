@@ -98,7 +98,7 @@ Caso nenhum parâmetro seja utilizado os 10 primeiros jobs serão retornados.
 
 `Filtros:` O usuário poderá filtrar um usuário através da sua data de criação ou nome utilizando os parâmetros dateat=dd/mm/yyyy ou name=xxxxx.
 
-> GET /users?user=xx
+> GET /users?name=xx
 
 > GET /users?dateat=dd/mm/yyyy
 
