@@ -23,6 +23,7 @@ export class JobListComponent implements OnInit {
   searchValue: String = ''
   selectValue: String = 'user'
   isError: Boolean = false;
+  isLoading: Boolean = true;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -38,8 +39,10 @@ export class JobListComponent implements OnInit {
       this.jobData = new MatTableDataSource(data.data);
       this.jobData.paginator = this.paginator;
       this.length = data.size;
+      this.isLoading = false;
     },(e)=>{
       this.isError = true;
+      this.isLoading = false;
     })
   }
 
@@ -51,8 +54,10 @@ export class JobListComponent implements OnInit {
     this.jobServices.getJobs(this.filter).subscribe((data: any) => {
       this.jobData = new MatTableDataSource(data.data);
       this.length = data.size;
+      this.isLoading = false;
     },(e)=>{
       this.isError = true;
+      this.isLoading = false;
     })
   }
 

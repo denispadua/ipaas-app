@@ -23,6 +23,9 @@
 
     </div>
     <div class="mat-elevation-z8">
+
+        <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+
         <table mat-table [dataSource]="jobData">
 
             <ng-container matColumnDef="Nome">
