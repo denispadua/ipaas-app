@@ -22,7 +22,12 @@
         </div>
     </div>
     <div class="mat-elevation-z8">
+
+        <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+
         <table mat-table [dataSource]="userData">
+
+            
 
             <ng-container matColumnDef="Nome">
                 <th mat-header-cell *matHeaderCellDef> Nome </th>
